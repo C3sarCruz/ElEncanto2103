@@ -1,0 +1,365 @@
+<script src="comparativo.js" type="text/javascript"></script>
+<link href="comparativo.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<div class="headerF">
+    <h1 class="Hheader">
+        Residencial El Encanto
+    </h1>
+    <p>
+        <hr>
+    <h5>
+        Comparativo de Presupuesto
+    </h5>
+    <h6>
+        Mes de Diciembre de 2022
+    </h6>
+    </p>
+</div>
+
+
+<body>
+    <div class="contenidof">
+        <div class="container">
+            <br>
+            <br>
+            <table style="border-collapse: collapse; width: 100%; height: 100px;">
+                <tbody>
+                    <tr style="height: 62px;">
+                        <td style="width: 50%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_TI('contenidoTI')">
+                                    <strong>
+                                        Total de Ingresos
+                                    </strong>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_TI('contenidoTI')">
+                                    <p>
+                                        <strong>
+                                            Presupuesto
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        3,000,916.47
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_TI('contenidoTI')">
+                                    <p>
+                                        <strong>
+                                            Real
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        2,912,626.56
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_TI('contenidoTI')">
+                                    <p>
+                                        <strong>
+                                            Diferencia
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        -88,289.90
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_TI('contenidoTI')">
+                                    <p>
+                                        <strong>
+                                            %
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        -2.94%
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="contenidoTI">
+                <div id="cerrarTI"><a href="javascript:cerrarTI()">❌</a></div>
+                <img src="TI.jpg">
+            </div>
+
+            <table style="border-collapse: collapse; width: 100%; height: 130px;">
+                <tbody>
+                    <tr style="height: 62px;">
+                        <td style="width: 50%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASub('contenidoCASub')">
+                                    <strong>
+                                        Subtotal Gastos de Operacion
+                                    </strong>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASub('contenidoCASub')">
+                                    <p>
+                                        3,119,122.06
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASub('contenidoCASub')">
+                                    <p>
+                                        2,933,147.75
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASub('contenidoCASub')">
+                                    <p>
+                                        185,974.31
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASub('contenidoCASub')">
+                                    <p>
+                                        5.96%
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="contenidoCASub">
+                <div id="cerrarCASub"><a href="javascript:cerrarCASub()">❌</a></div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_GA('contenidoGA')" class="boton_mostrar">
+                                Gastos de Administración:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_GM('contenidoGM')" class="boton_mostrar">
+                                Gastos de Mantenimiento:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_ME('contenidoME')" class="boton_mostrar">
+                                Mantenimiento de Edificio:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_A('contenidoA')" class="boton_mostrar">
+                                Albercas:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_J('contenidoJ')" class="boton_mostrar">
+                                Jardineria:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_S('contenidoS')" class="boton_mostrar">
+                                Seguridad:
+                            </a>
+                        </p>
+                        <p>
+                            <a style='cursor: pointer;' onClick="muestra_BM('contenidoBM')" class="boton_mostrar">
+                                Bienes Muebles:
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                        <div id="contenidoGA">
+                            <div id="cerrarGA"><a href="javascript:cerrarGA()">❌</a></div>
+                            <img src="cGA.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoGM">
+                            <div id="cerrarGM"><a href="javascript:cerrarGM()">❌</a></div>
+                            <img src="cGM.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoME">
+                            <div id="cerrarME"><a href="javascript:cerrarME()">❌</a></div>
+                            <img src="cME.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoA">
+                            <div id="cerrarA"><a href="javascript:cerrarA()">❌</a></div>
+                            <img src="cA.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoJ">
+                            <div id="cerrarJ"><a href="javascript:cerrarJ()">❌</a></div>
+                            <img src="cJ.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoS">
+                            <div id="cerrarS"><a href="javascript:cerrarS()">❌</a></div>
+                            <img src="cS.jpg">
+                        </div>
+                        </p>
+                        <p>
+                        <div id="contenidoBM">
+                            <div id="cerrarBM"><a href="javascript:cerrarBM()">❌</a></div>
+                            <img src="cBM.jpg">
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <table style="border-collapse: collapse; width: 100%; height: 130px;">
+                <tbody>
+                    <tr style="height: 62px;">
+                        <td style="width: 50%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASP('contenidoCASP')">
+                                    <strong>
+                                        Subtotal de Proyectos
+                                    </strong>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASP('contenidoCASP')">
+                                    <strong>
+                                        -
+                                    </strong>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASP('contenidoCASP')">
+                                    <p>
+                                        298,796.64
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASP('contenidoCASP')">
+                                    <p>
+                                        298,796.64
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+                                <a style='cursor: pointer;' onClick="muestra_CASP('contenidoCASP')">
+                                    <p>
+                                        0.00%
+                                    </p>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="contenidoCASP">
+                <div id="cerrarCASP"><a href="javascript:cerrarCASP()">❌</a></div>
+                <img src="CASP.jpg">
+            </div>
+
+            <table style="border-collapse: collapse; width: 100%; height: 130px;">
+                <tbody>
+                    <tr style="height: 62px;">
+                        <td style="width: 50%; height: 60px;">
+                            <div class="boton_mostrar">
+
+                                <strong>
+                                    Total
+                                </strong>
+
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+
+                                <p>
+                                    3,119,122.06
+                                </p>
+
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+
+                                <p>
+                                    3,231,944.39
+                                </p>
+
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+
+                                <p>
+                                    -112,822.33
+                                </p>
+
+                            </div>
+                        </td>
+                        <td style=" width: 15%; height: 60px;">
+                            <div class="boton_mostrar">
+
+                                <p>
+                                    -3.62%
+                                </p>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<footer>
+    <button class="button-82-pushable" role="button">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"><a href="index1.html" style="text-decoration: none; color: #2b2b2b;">Regresar
+                ⟳</a>
+        </span>
+    </button>
+    <hr>
+    <p> &copy; - Residencial Encanto</p>
+</footer>
